@@ -2,4 +2,5 @@ language: java
 on: [push]
 
 jobs:
- test: com.vmware.admiral.auth.project.ProjectServiceTest#testDelete
+ test: mockserver-core 
+  -Dtest: org.mockserver.mock.HttpStateTest#shouldRetrieveLogEntriesWithRequestMatcher
