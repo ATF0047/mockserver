@@ -1,0 +1,5 @@
+language: java
+on: [push]
+
+jobs:
+ test: com.vmware.admiral.auth.project.ProjectServiceTest#testDelete
