@@ -6,4 +6,4 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - run: mvn test-compile -pl mockserver-core -am
-   - run: mvn -pl mockserver-core test -Dtest=org.mockserver.mock.HttpStateTest#shouldRetrieveLogEntriesWithRequestMatcher
+   - run: mvn -pl mockserver-core edu.illinois:nondex-maven-plugin:1.1.2:nondex test -Dtest=org.mockserver.mock.HttpStateTest#shouldRetrieveLogEntriesWithRequestMatcher
