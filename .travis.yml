@@ -3,4 +3,4 @@ on: [push]
 
 jobs:
  test: mockserver-core 
-  -Dtest: org.mockserver.mock.HttpStateTest#shouldRetrieveLogEntriesWithRequestMatcher
+  Dtest: org.mockserver.mock.HttpStateTest#shouldRetrieveLogEntriesWithRequestMatcher
